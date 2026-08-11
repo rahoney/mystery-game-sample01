@@ -47,7 +47,7 @@ async function reachStage3(page: Page) {
 }
 
 test.beforeEach(async ({ page }) => {
-  await page.goto("/");
+  await page.goto("./");
   await page.evaluate(() => localStorage.clear());
   await page.reload();
   await clickAction(page, "new-game");
