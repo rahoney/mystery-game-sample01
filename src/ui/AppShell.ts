@@ -1,4 +1,5 @@
 import type Phaser from "phaser";
+import { assetUrl } from "../assets";
 import type { CaseEngine, FinalJudgement, ToastPayload } from "../core/case/CaseEngine";
 import type { QuestionIntent, Stage } from "../core/case/schemas";
 import type { SaveManager } from "../core/save/SaveManager";
@@ -386,7 +387,7 @@ export class AppShell {
       1,
       Math.round(((state.completedAt ?? Date.now()) - state.startedAt) / 1000),
     );
-    return `<div class="ending"><div class="ending-seal"><span>CASE</span><strong>CLOSED</strong><small>001</small></div><div class="ending-story"><img class="ending-cut" src="/assets/events/case-closed.webp" alt="사건 동선 재구성" /><span class="eyebrow">사건 재구성 · 20:18—20:27</span><h2>마지막 접속자는 서연이었다.</h2><ol><li><b>20:16</b> 서연은 편의점에서 홍보 자료 확인에 쓸 음료와 붉은 펜을 샀다.</li><li><b>20:18</b> 파란 카드로 사무실에 재입실했다.</li><li><b>20:20</b> USB를 연결해 홍보 캡처를 확인했고 보안 경고에 당황했다.</li><li><b>20:23</b> USB를 회의실 보관함 2B에 숨기고 열쇠를 떨어뜨렸다.</li><li><b>20:27</b> 다시 퇴실한 뒤, 처음에는 만지지 않았다고 주장했다.</li></ol><p>민수의 개인 빌드, 지연의 개인 전화, 준호의 순찰 공백은 모두 거짓말의 이유였지만 USB를 옮긴 행동은 아니었다.</p></div><div class="ending-stats"><div><strong>${state.discoveredEvidenceIds.length}</strong><span>발견 단서</span></div><div><strong>${state.interviewCount}</strong><span>인터뷰</span></div><div><strong>${state.contradictionIds.length}</strong><span>모순</span></div><div><strong>${state.incorrectAttempts}</strong><span>오답</span></div><div><strong>${Math.floor(seconds / 60)}:${String(seconds % 60).padStart(2, "0")}</strong><span>플레이 시간</span></div></div><button data-action="reset-case" class="button button--primary">새 사건처럼 다시 플레이</button></div>`;
+    return `<div class="ending"><div class="ending-seal"><span>CASE</span><strong>CLOSED</strong><small>001</small></div><div class="ending-story"><img class="ending-cut" src="${assetUrl("assets/events/case-closed.webp")}" alt="사건 동선 재구성" /><span class="eyebrow">사건 재구성 · 20:18—20:27</span><h2>마지막 접속자는 서연이었다.</h2><ol><li><b>20:16</b> 서연은 편의점에서 홍보 자료 확인에 쓸 음료와 붉은 펜을 샀다.</li><li><b>20:18</b> 파란 카드로 사무실에 재입실했다.</li><li><b>20:20</b> USB를 연결해 홍보 캡처를 확인했고 보안 경고에 당황했다.</li><li><b>20:23</b> USB를 회의실 보관함 2B에 숨기고 열쇠를 떨어뜨렸다.</li><li><b>20:27</b> 다시 퇴실한 뒤, 처음에는 만지지 않았다고 주장했다.</li></ol><p>민수의 개인 빌드, 지연의 개인 전화, 준호의 순찰 공백은 모두 거짓말의 이유였지만 USB를 옮긴 행동은 아니었다.</p></div><div class="ending-stats"><div><strong>${state.discoveredEvidenceIds.length}</strong><span>발견 단서</span></div><div><strong>${state.interviewCount}</strong><span>인터뷰</span></div><div><strong>${state.contradictionIds.length}</strong><span>모순</span></div><div><strong>${state.incorrectAttempts}</strong><span>오답</span></div><div><strong>${Math.floor(seconds / 60)}:${String(seconds % 60).padStart(2, "0")}</strong><span>플레이 시간</span></div></div><button data-action="reset-case" class="button button--primary">새 사건처럼 다시 플레이</button></div>`;
   }
 
   private toggleFinalEvidence(id: string): void {

@@ -1,4 +1,5 @@
 import type { Evidence } from "../core/case/schemas";
+import { assetUrl } from "../assets";
 import { escapeHtml } from "./html";
 
 const fallbackByFile: Record<string, string> = {
@@ -18,5 +19,5 @@ export function evidenceArtwork(evidence: Evidence, className: string): string {
   const source = evidence.asset ?? "";
   const filename = source.split("/").at(-1) ?? "";
   const fallback = fallbackByFile[filename] ?? "/assets/placeholders/object-note.svg";
-  return `<img class="${escapeHtml(className)}" src="${escapeHtml(source || fallback)}" data-fallback="${escapeHtml(fallback)}" alt="${escapeHtml(evidence.name)}" loading="lazy" />`;
+  return `<img class="${escapeHtml(className)}" src="${escapeHtml(assetUrl(source || fallback))}" data-fallback="${escapeHtml(assetUrl(fallback))}" alt="${escapeHtml(evidence.name)}" loading="lazy" />`;
 }

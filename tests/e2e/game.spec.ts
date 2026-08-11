@@ -11,6 +11,14 @@ async function closeResult(page: Page) {
 
 async function reachStage3(page: Page) {
   await clickAction(page, "examine-hotspot", "usb-dock");
+  await expect(page.locator(".found-evidence__image")).toBeVisible();
+  await expect
+    .poll(() =>
+      page
+        .locator(".found-evidence__image")
+        .evaluate((image: HTMLImageElement) => image.naturalWidth),
+    )
+    .toBeGreaterThan(0);
   await closeResult(page);
   await clickAction(page, "examine-hotspot", "note-bin");
   await clickAction(page, "advance-stage");

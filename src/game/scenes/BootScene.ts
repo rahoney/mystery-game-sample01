@@ -1,4 +1,5 @@
 import Phaser from "phaser";
+import { assetUrl } from "../../assets";
 
 export class BootScene extends Phaser.Scene {
   constructor() {
@@ -6,9 +7,9 @@ export class BootScene extends Phaser.Scene {
   }
 
   preload(): void {
-    this.load.image("room-office", "/assets/backgrounds/office-main.webp");
-    this.load.image("room-meeting", "/assets/backgrounds/meeting-room.webp");
-    this.load.image("room-lounge", "/assets/backgrounds/lounge.webp");
+    this.load.image("room-office", assetUrl("assets/backgrounds/office-main.webp"));
+    this.load.image("room-meeting", assetUrl("assets/backgrounds/meeting-room.webp"));
+    this.load.image("room-lounge", assetUrl("assets/backgrounds/lounge.webp"));
   }
 
   create(): void {

@@ -1,4 +1,5 @@
 import type { CaseEngine } from "../core/case/CaseEngine";
+import { assetUrl } from "../assets";
 import { evidenceArtwork } from "./EvidenceArtwork";
 import { escapeHtml } from "./html";
 
@@ -43,7 +44,7 @@ export class DialoguePanel {
       <section class="dialogue-main">
         <header class="character-header">
           <div class="portrait portrait--${dialogueState}" style="--avatar:${character.color}">
-            <img src="/assets/characters/${character.id}-${expression}.webp" alt="${escapeHtml(character.name)} · ${this.stateLabel(dialogueState)}" />
+            <img src="${assetUrl(`assets/characters/${character.id}-${expression}.webp`)}" alt="${escapeHtml(character.name)} · ${this.stateLabel(dialogueState)}" />
           </div>
           <div><span class="eyebrow">${escapeHtml(character.role)}</span><h2>${escapeHtml(character.name)}</h2><p>${escapeHtml(character.personality)}</p></div>
           <span class="state-pill state-pill--${dialogueState}">${this.stateLabel(dialogueState)}</span>

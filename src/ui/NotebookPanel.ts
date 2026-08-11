@@ -1,4 +1,5 @@
 import type { CaseEngine } from "../core/case/CaseEngine";
+import { assetUrl } from "../assets";
 import { EvidencePanel } from "./EvidencePanel";
 import { escapeHtml } from "./html";
 
@@ -41,7 +42,7 @@ export class NotebookPanel {
     const state = this.engine.snapshot();
     if (tab === "evidence") return this.evidence.render();
     if (tab === "characters")
-      return `<div class="profile-grid">${this.engine.bundle.characters.map((character) => `<article class="profile-card"><img class="profile-photo" src="/assets/characters/${character.id}-neutral.webp" alt="${escapeHtml(character.name)}" /><div><h3>${character.name}</h3><p>${character.role}</p><small>${escapeHtml(character.personality)}</small><em>${state.interviewedCharacterIds.includes(character.id) ? `대화함 · ${state.dialogueStates[character.id]}` : "아직 대화하지 않음"}</em></div></article>`).join("")}</div>`;
+      return `<div class="profile-grid">${this.engine.bundle.characters.map((character) => `<article class="profile-card"><img class="profile-photo" src="${assetUrl(`assets/characters/${character.id}-neutral.webp`)}" alt="${escapeHtml(character.name)}" /><div><h3>${character.name}</h3><p>${character.role}</p><small>${escapeHtml(character.personality)}</small><em>${state.interviewedCharacterIds.includes(character.id) ? `대화함 · ${state.dialogueStates[character.id]}` : "아직 대화하지 않음"}</em></div></article>`).join("")}</div>`;
     if (tab === "timeline") {
       const facts = this.engine.bundle.facts.filter((fact) =>
         state.discoveredFactIds.includes(fact.id),
