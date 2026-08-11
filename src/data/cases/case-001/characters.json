@@ -1,0 +1,42 @@
+[
+  {
+    "id": "minsu",
+    "name": "민수",
+    "role": "개발자",
+    "color": "#70a7ff",
+    "personality": "논리적이고 직설적이지만 규정 위반 앞에서는 짧게 답한다.",
+    "hiddenFactId": "minsu_private_build",
+    "knownFactIds": ["usb_missing"],
+    "deniedClaimIds": ["minsu_left_early"]
+  },
+  {
+    "id": "jiyeon",
+    "name": "지연",
+    "role": "기획자",
+    "color": "#c68cff",
+    "personality": "차분하고 기억력이 좋지만 사적인 일은 감춘다.",
+    "hiddenFactId": "jiyeon_private_call",
+    "knownFactIds": ["usb_missing", "note_points_2b"],
+    "deniedClaimIds": ["jiyeon_short_stay"]
+  },
+  {
+    "id": "junho",
+    "name": "준호",
+    "role": "보안·운영",
+    "color": "#73d7ae",
+    "personality": "규정 중심이고 관찰력이 좋지만 자신의 공백은 축소한다.",
+    "hiddenFactId": "junho_left_patrol",
+    "knownFactIds": ["usb_missing", "seoyeon_returned"],
+    "deniedClaimIds": ["junho_full_patrol"]
+  },
+  {
+    "id": "seoyeon",
+    "name": "서연",
+    "role": "마케팅",
+    "color": "#ff7c74",
+    "personality": "친근하고 말이 빠르며 압박받으면 설명을 덧붙인다.",
+    "hiddenFactId": "seoyeon_moved_usb",
+    "knownFactIds": ["usb_missing", "note_points_2b", "seoyeon_returned"],
+    "deniedClaimIds": ["seoyeon_never_returned", "seoyeon_never_touched"]
+  }
+]

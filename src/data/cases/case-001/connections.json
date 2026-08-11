@@ -1,0 +1,30 @@
+[
+  {
+    "id": "connection-2b",
+    "requiresEvidence": ["torn-note", "locker-tag"],
+    "unlocksFactId": "note_points_2b",
+    "title": "2B라는 공통 표식",
+    "description": "메모와 태그가 같은 회의실 보관함을 가리킨다."
+  },
+  {
+    "id": "connection-return",
+    "requiresEvidence": ["blue-card", "receipt"],
+    "unlocksFactId": "seoyeon_returned",
+    "title": "20:18의 재입실",
+    "description": "20:16 영수증 직후 서연의 카드가 사무실에서 사용됐다."
+  },
+  {
+    "id": "connection-key",
+    "requiresEvidence": ["locker-tag", "brass-key"],
+    "unlocksFactId": "key_opens_2b",
+    "title": "보관함 2B의 열쇠",
+    "description": "태그 번호와 열쇠 각인이 정확히 일치한다."
+  },
+  {
+    "id": "connection-usb",
+    "requiresEvidence": ["blue-card", "usb-red"],
+    "unlocksFactId": "seoyeon_moved_usb",
+    "title": "마지막 접속자",
+    "description": "서연의 재입실 기록과 USB의 20:20 홍보 폴더 접근이 이어진다."
+  }
+]

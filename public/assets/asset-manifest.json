@@ -1,0 +1,69 @@
+{
+  "version": 1,
+  "objects": [
+    {
+      "id": "usb-red",
+      "file": "/assets/objects/usb-red.png",
+      "fallback": "/assets/placeholders/object-usb.svg",
+      "prompt": "red prototype USB drive"
+    },
+    {
+      "id": "access-card-blue",
+      "file": "/assets/objects/access-card-blue.png",
+      "fallback": "/assets/placeholders/object-card.svg",
+      "prompt": "blue office access card marked S.Y."
+    },
+    {
+      "id": "torn-note",
+      "file": "/assets/objects/torn-note.png",
+      "fallback": "/assets/placeholders/object-note.svg",
+      "prompt": "torn paper note with red writing 2B"
+    },
+    {
+      "id": "coffee-cup",
+      "file": "/assets/objects/coffee-cup.png",
+      "fallback": "/assets/placeholders/object-cup.svg",
+      "prompt": "used white paper coffee cup marked JY"
+    },
+    {
+      "id": "red-book",
+      "file": "/assets/objects/red-book.png",
+      "fallback": "/assets/placeholders/object-book.svg",
+      "prompt": "red hardcover developer notebook"
+    },
+    {
+      "id": "black-umbrella",
+      "file": "/assets/objects/black-umbrella.png",
+      "fallback": "/assets/placeholders/object-umbrella.svg",
+      "prompt": "wet folded black umbrella"
+    },
+    {
+      "id": "medicine-pack",
+      "file": "/assets/objects/medicine-pack.png",
+      "fallback": "/assets/placeholders/object-medicine.svg",
+      "prompt": "opened silver painkiller blister pack"
+    },
+    {
+      "id": "brass-key",
+      "file": "/assets/objects/brass-key.png",
+      "fallback": "/assets/placeholders/object-key.svg",
+      "prompt": "small brass locker key engraved B-2"
+    },
+    {
+      "id": "receipt",
+      "file": "/assets/objects/receipt.png",
+      "fallback": "/assets/placeholders/object-receipt.svg",
+      "prompt": "crumpled convenience store receipt"
+    },
+    {
+      "id": "locker-tag",
+      "file": "/assets/objects/locker-tag.png",
+      "fallback": "/assets/placeholders/object-tag.svg",
+      "prompt": "small brass meeting room locker tag stamped 2B"
+    }
+  ],
+  "backgrounds": ["office-main.webp", "meeting-room.webp", "lounge.webp"],
+  "characters": ["minsu", "jiyeon", "junho", "seoyeon"],
+  "expressions": ["neutral", "nervous", "defensive", "resigned"],
+  "eventCuts": ["incident-empty-slot.webp", "confrontation.webp", "case-closed.webp"]
+}

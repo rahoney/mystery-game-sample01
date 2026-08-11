@@ -1,0 +1,67 @@
+[
+  {
+    "id": 1,
+    "title": "비어 있는 사무실",
+    "subtitle": "남겨진 자리",
+    "objective": "빈 USB 슬롯을 포함해 단서 2개 이상 조사하세요.",
+    "intro": "20:42. 마지막 직원이 나간 뒤, 프로토타입 USB가 사라졌다는 연락이 왔다.",
+    "unlockedRooms": ["office"],
+    "mode": "investigation",
+    "clearConditions": [
+      { "type": "evidence", "id": "empty-slot" },
+      { "type": "evidenceCount", "count": 2 }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "세 개의 공간",
+    "subtitle": "흩어진 흔적",
+    "objective": "모든 공간을 방문하고 서로 이어지는 단서를 찾으세요.",
+    "intro": "사건은 한 방에서 끝나지 않았다. 회의실과 휴게실에도 퇴근 후의 흔적이 남아 있다.",
+    "unlockedRooms": ["office", "meeting", "lounge"],
+    "mode": "investigation",
+    "clearConditions": [
+      { "type": "roomsVisited", "count": 3 },
+      { "type": "evidenceCount", "count": 4 },
+      { "type": "connectionCount", "count": 1 }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "네 사람의 증언",
+    "subtitle": "기억은 각자의 편이다",
+    "objective": "네 사람 모두와 대화하고 증거를 제시해 모순을 찾으세요.",
+    "intro": "물건은 사실만 남기지만 사람은 이유를 감춘다. 이제 네 사람의 말을 들어볼 차례다.",
+    "unlockedRooms": ["office", "meeting", "lounge"],
+    "mode": "interview",
+    "clearConditions": [
+      { "type": "charactersInterviewed", "count": 4 },
+      { "type": "presentationCount", "count": 2 },
+      { "type": "contradictionCount", "count": 1 }
+    ]
+  },
+  {
+    "id": 4,
+    "title": "무너지는 알리바이",
+    "subtitle": "2B의 문",
+    "objective": "핵심 인물을 압박하고 보관함 2B를 연 뒤 USB를 제시하세요.",
+    "intro": "서연의 출입 기록과 진술이 어긋난다. 같은 증거도 순서와 맥락에 따라 무게가 달라진다.",
+    "unlockedRooms": ["office", "meeting", "lounge"],
+    "mode": "interview",
+    "clearConditions": [
+      { "type": "dialogueState", "characterId": "seoyeon", "state": "cracked" },
+      { "type": "contradictionCount", "count": 2 },
+      { "type": "evidence", "id": "usb-red" }
+    ]
+  },
+  {
+    "id": 5,
+    "title": "최종 추론",
+    "subtitle": "마지막 접속자",
+    "objective": "인물, 핵심 증거 2~4개, 결정적 모순을 선택해 사건을 설명하세요.",
+    "intro": "사실은 충분하다. 이제 누가, 왜, 어떻게 USB를 옮겼는지 하나의 설명으로 묶어야 한다.",
+    "unlockedRooms": ["office", "meeting", "lounge"],
+    "mode": "deduction",
+    "clearConditions": []
+  }
+]

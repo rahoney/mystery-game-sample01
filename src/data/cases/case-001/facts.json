@@ -1,0 +1,50 @@
+[
+  {
+    "id": "usb_missing",
+    "text": "붉은 프로토타입 USB는 20:10 이후 원래 슬롯에서 사라졌다.",
+    "hidden": false,
+    "stage": 1
+  },
+  {
+    "id": "note_points_2b",
+    "text": "찢어진 메모의 '2B'는 회의실 보관함 번호다.",
+    "hidden": false,
+    "stage": 2
+  },
+  {
+    "id": "seoyeon_returned",
+    "text": "서연은 퇴근 처리 후 파란 카드로 사무실에 다시 들어왔다.",
+    "hidden": true,
+    "stage": 3
+  },
+  {
+    "id": "jiyeon_private_call",
+    "text": "지연은 회의실에서 개인 전화를 하느라 체류 시간을 줄여 말했다.",
+    "hidden": true,
+    "stage": 3
+  },
+  {
+    "id": "minsu_private_build",
+    "text": "민수는 회사 장비로 개인 프로젝트 빌드를 돌렸다.",
+    "hidden": true,
+    "stage": 3
+  },
+  {
+    "id": "junho_left_patrol",
+    "text": "준호는 약을 사러 순찰 자리를 잠시 비웠다.",
+    "hidden": true,
+    "stage": 3
+  },
+  {
+    "id": "key_opens_2b",
+    "text": "황동 열쇠의 각인 B-2는 회의실 보관함 2B와 일치한다.",
+    "hidden": false,
+    "stage": 4
+  },
+  {
+    "id": "seoyeon_moved_usb",
+    "text": "서연이 홍보 화면 확인을 위해 USB를 옮겼고 보관함 2B에 숨겼다.",
+    "hidden": true,
+    "stage": 4
+  }
+]

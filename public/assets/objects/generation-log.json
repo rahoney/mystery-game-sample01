@@ -1,0 +1,82 @@
+[
+  {
+    "id": "usb-red",
+    "generatedAt": "2026-08-11T10:15:58.294Z",
+    "usage": {
+      "type": "generations",
+      "generations": 1
+    }
+  },
+  {
+    "id": "access-card-blue",
+    "generatedAt": "2026-08-11T10:16:26.238Z",
+    "usage": {
+      "type": "generations",
+      "generations": 1
+    }
+  },
+  {
+    "id": "torn-note",
+    "generatedAt": "2026-08-11T10:16:46.515Z",
+    "usage": {
+      "type": "generations",
+      "generations": 1
+    }
+  },
+  {
+    "id": "coffee-cup",
+    "generatedAt": "2026-08-11T10:17:09.862Z",
+    "usage": {
+      "type": "generations",
+      "generations": 1
+    }
+  },
+  {
+    "id": "red-book",
+    "generatedAt": "2026-08-11T10:17:37.856Z",
+    "usage": {
+      "type": "generations",
+      "generations": 1
+    }
+  },
+  {
+    "id": "black-umbrella",
+    "generatedAt": "2026-08-11T10:17:53.482Z",
+    "usage": {
+      "type": "generations",
+      "generations": 1
+    }
+  },
+  {
+    "id": "medicine-pack",
+    "generatedAt": "2026-08-11T10:18:14.395Z",
+    "usage": {
+      "type": "generations",
+      "generations": 1
+    }
+  },
+  {
+    "id": "brass-key",
+    "generatedAt": "2026-08-11T10:18:29.455Z",
+    "usage": {
+      "type": "generations",
+      "generations": 1
+    }
+  },
+  {
+    "id": "receipt",
+    "generatedAt": "2026-08-11T10:18:50.012Z",
+    "usage": {
+      "type": "generations",
+      "generations": 1
+    }
+  },
+  {
+    "id": "locker-tag",
+    "generatedAt": "2026-08-11T10:19:17.460Z",
+    "usage": {
+      "type": "generations",
+      "generations": 1
+    }
+  }
+]

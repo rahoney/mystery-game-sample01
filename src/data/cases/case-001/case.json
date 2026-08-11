@@ -1,0 +1,9 @@
+{
+  "id": "case-001",
+  "title": "흔적: 마지막 접속자",
+  "subtitle": "TRACE: The Last Visitor",
+  "premise": "퇴근 후 비어 있던 사무실에서 외부 공개 전인 붉은 프로토타입 USB가 사라졌다. 누가 그것을 옮겼는지 밝혀라.",
+  "culpritId": "seoyeon",
+  "finalRequiredEvidenceIds": ["empty-slot", "blue-card", "usb-red"],
+  "finalRequiredContradictionIds": ["seoyeon-card-conflict", "seoyeon-touch-conflict"]
+}

@@ -1,0 +1,7 @@
+ai-mystery-demo-technical-spec-v1.0.md
+dist/
+node_modules/
+playwright-report/
+test-results/
+public/assets/**/*.webp
+public/assets/**/*.png

@@ -1,0 +1,339 @@
+{
+  "characters": [
+    {
+      "characterId": "minsu",
+      "greetings": {
+        "neutral": "필요한 것만 묻죠. 배포 로그라면 제가 더 정확합니다.",
+        "evasive": "개인 작업 이야기는 사건과 별개입니다.",
+        "pressured": "규정 위반은 인정합니다. 하지만 USB는 건드리지 않았어요.",
+        "cracked": "숨긴 건 개인 빌드뿐입니다. 로그를 전부 보여드리죠."
+      },
+      "responses": {
+        "neutral": {
+          "LOCATION": "20시쯤 제 자리에서 빌드 상태를 확인했습니다.",
+          "USB": "오후 테스트 때 봤습니다. 붉은 케이스라 눈에 띄죠.",
+          "OBJECT": "개발 장비라면 이름을 말해 주세요.",
+          "PERSON": "지연이 회의실에 남아 있는 건 봤습니다.",
+          "TIMELINE": "19:50 빌드, 20:05 로그 확인, 그 뒤 퇴근했습니다.",
+          "ALIBI": "빌드 서버 기록이 제 알리바이입니다.",
+          "MOTIVE": "USB의 코드는 이미 저장소에 있습니다. 훔칠 이유가 없죠.",
+          "OTHER": "시간이나 물건을 특정하면 답하겠습니다."
+        },
+        "evasive": {
+          "LOCATION": "계속 제 자리였다고 했습니다.",
+          "USB": "필요했다면 정식으로 체크아웃했을 겁니다.",
+          "OBJECT": "제 노트는 사적인 물건입니다.",
+          "PERSON": "다른 사람 감시까지 하진 않았습니다.",
+          "TIMELINE": "세부 분 단위까지 기억하진 못합니다.",
+          "ALIBI": "서버 로그를 확인하세요.",
+          "MOTIVE": "개인 빌드와 USB 분실을 억지로 엮지 마세요.",
+          "OTHER": "사건과 관련된 질문만 하죠."
+        },
+        "pressured": {
+          "LOCATION": "회사 장비에서 개인 프로젝트 빌드를 돌렸습니다. 그게 전부예요.",
+          "USB": "USB에는 손대지 않았고 제 빌드는 원격 저장소에서 받았습니다.",
+          "OBJECT": "붉은 노트 안쪽 로그가 제 규정 위반을 증명합니다.",
+          "PERSON": "20:10 전후엔 준호가 복도에 없었습니다.",
+          "TIMELINE": "20:07 빌드 완료, 20:09 종료, 20:11 퇴실입니다.",
+          "ALIBI": "각 시각은 서버와 출입 로그로 대조할 수 있습니다.",
+          "MOTIVE": "숨길 이유는 있었지만 USB를 옮길 이유는 없습니다.",
+          "OTHER": "제가 숨긴 사실은 인정했습니다."
+        },
+        "cracked": {
+          "LOCATION": "20:11 이후엔 회사에 없었습니다.",
+          "USB": "홍보 폴더 접근 로그가 생겼다면 제 세션이 아닙니다.",
+          "OBJECT": "제 물건은 전부 확인해도 됩니다.",
+          "PERSON": "서연이 퇴근 전에 캡처 화면을 계속 물어봤습니다.",
+          "TIMELINE": "로그 원본을 사건 노트에 넘기겠습니다.",
+          "ALIBI": "제 실수와 이번 사건은 분리해서 판단해 주세요.",
+          "MOTIVE": "저는 코드를 숨겼지 USB를 숨기지 않았습니다.",
+          "OTHER": "더는 감추는 것 없습니다."
+        }
+      },
+      "evidenceReactions": [
+        {
+          "evidenceId": "red-book",
+          "minState": "neutral",
+          "text": "…그 로그는 회사 장비로 개인 빌드를 돌린 기록입니다. 규정 위반은 인정하죠.",
+          "nextState": "pressured",
+          "contradictionId": "minsu-build-conflict",
+          "unlockFactId": "minsu_private_build"
+        },
+        {
+          "evidenceId": "empty-slot",
+          "minState": "neutral",
+          "text": "물리적으로 뽑힌 흔적이군요. 원격 작업인 제 빌드와는 무관합니다."
+        },
+        {
+          "evidenceId": "blue-card",
+          "minState": "neutral",
+          "text": "S.Y.면 서연 카드겠네요. 제 퇴실 뒤 기록을 확인해 보세요."
+        },
+        { "evidenceId": "receipt", "minState": "neutral", "text": "20:16이면 제가 나간 뒤입니다." },
+        {
+          "evidenceId": "usb-red",
+          "minState": "neutral",
+          "text": "홍보 폴더 접근 시각과 제 서버 세션을 비교하면 답이 나옵니다.",
+          "nextState": "cracked"
+        }
+      ]
+    },
+    {
+      "characterId": "jiyeon",
+      "greetings": {
+        "neutral": "기억나는 순서대로 말씀드릴게요.",
+        "evasive": "회의실에 오래 있지는 않았어요.",
+        "pressured": "시간을 줄여 말한 건 미안해요. 개인 전화 때문이었어요.",
+        "cracked": "통화 기록까지 확인하셔도 괜찮아요."
+      },
+      "responses": {
+        "neutral": {
+          "LOCATION": "잠깐 회의실에 들렀다가 20시 전에 나왔어요.",
+          "USB": "오후 회의 때 테이블 위에서 봤어요.",
+          "OBJECT": "메모나 일정표라면 제가 알아볼 수 있어요.",
+          "PERSON": "민수는 계속 모니터를 보고 있었어요.",
+          "TIMELINE": "19:40 회의 종료, 정리 후 퇴근했어요.",
+          "ALIBI": "회의실 예약 기록이 남아 있을 거예요.",
+          "MOTIVE": "프로젝트 일정은 알지만 원본 USB는 필요 없어요.",
+          "OTHER": "질문을 조금 더 구체적으로 해주시겠어요?"
+        },
+        "evasive": {
+          "LOCATION": "회의실에 잠깐 있었다고 말씀드렸어요.",
+          "USB": "그 뒤로는 보지 못했어요.",
+          "OBJECT": "제 컵이 남았다고 체류 시간을 단정할 순 없죠.",
+          "PERSON": "누가 드나들었는지는 유리벽 너머라 잘 못 봤어요.",
+          "TIMELINE": "정확한 시각은 기억이 흐려요.",
+          "ALIBI": "제가 USB를 들고 나가는 모습은 없을 거예요.",
+          "MOTIVE": "숨길 만한 동기도 없습니다.",
+          "OTHER": "사적인 부분은 사건과 관계없어요."
+        },
+        "pressured": {
+          "LOCATION": "20:14까지 회의실에서 개인 전화를 했어요.",
+          "USB": "통화 중엔 USB를 보지 못했어요.",
+          "OBJECT": "컵 물자국이 오래 남은 건 제가 오래 있었기 때문이에요.",
+          "PERSON": "나오면서 준호가 급히 밖에서 돌아오는 걸 봤어요.",
+          "TIMELINE": "통화 기록은 19:53부터 20:14입니다.",
+          "ALIBI": "상대방과 통화 기록이 모두 확인될 거예요.",
+          "MOTIVE": "숨긴 건 업무 시간의 개인 통화뿐이에요.",
+          "OTHER": "이제 정확히 답할게요."
+        },
+        "cracked": {
+          "LOCATION": "20:14에 회의실을 나와 바로 퇴근했어요.",
+          "USB": "보관함은 그때 닫혀 있었지만 2B 태그는 테이블 아래 없었어요.",
+          "OBJECT": "찢어진 메모 글씨는 서연이 쓰는 붉은 펜과 비슷해요.",
+          "PERSON": "서연이 오후에 홍보 캡처를 다시 확인해야 한다고 했어요.",
+          "TIMELINE": "제 시간대는 통화 기록으로 고정됩니다.",
+          "ALIBI": "제가 거짓말한 시간과 USB가 옮겨진 시간은 다릅니다.",
+          "MOTIVE": "부끄러움 때문에 숨겼지만 사건 동기는 없어요.",
+          "OTHER": "제가 본 범위라면 모두 말하겠습니다."
+        }
+      },
+      "evidenceReactions": [
+        {
+          "evidenceId": "coffee-cup",
+          "minState": "neutral",
+          "text": "…맞아요. 잠깐이 아니었어요. 개인 전화가 길어져 20:14까지 있었어요.",
+          "nextState": "pressured",
+          "contradictionId": "jiyeon-time-conflict",
+          "unlockFactId": "jiyeon_private_call"
+        },
+        {
+          "evidenceId": "torn-note",
+          "minState": "neutral",
+          "text": "2B는 회의실 보관함 번호예요. 붉은 펜 글씨는 낯익네요."
+        },
+        {
+          "evidenceId": "locker-tag",
+          "minState": "neutral",
+          "text": "제가 나올 때는 테이블 아래에 없었어요."
+        },
+        {
+          "evidenceId": "receipt",
+          "minState": "neutral",
+          "text": "20:16이면 제 통화가 끝난 직후네요."
+        },
+        {
+          "evidenceId": "usb-red",
+          "minState": "neutral",
+          "text": "제가 나올 때 보관함은 닫혀 있었어요. 이후 누군가 열었겠죠.",
+          "nextState": "cracked"
+        }
+      ]
+    },
+    {
+      "characterId": "junho",
+      "greetings": {
+        "neutral": "출입 기록과 규정 기준으로 답하겠습니다.",
+        "evasive": "순찰 동선에는 문제가 없었습니다.",
+        "pressured": "자리를 비운 건 인정합니다. 두통약을 사러 갔습니다.",
+        "cracked": "제 공백 때문에 기록 확인이 늦었습니다. 책임지겠습니다."
+      },
+      "responses": {
+        "neutral": {
+          "LOCATION": "20시 전후로 복도와 출입구를 순찰했습니다.",
+          "USB": "분실 신고 전에는 존재 자체를 몰랐습니다.",
+          "OBJECT": "출입 카드라면 사용 기록을 확인할 수 있습니다.",
+          "PERSON": "직원 셋의 퇴실을 확인했습니다.",
+          "TIMELINE": "19:55 순찰 시작, 20:25 복귀 보고입니다.",
+          "ALIBI": "보안 카메라와 순찰 체크가 있습니다.",
+          "MOTIVE": "보안 담당이 물건을 옮기면 기록부터 남깁니다.",
+          "OTHER": "기록과 관련된 질문을 해주십시오."
+        },
+        "evasive": {
+          "LOCATION": "정해진 구역을 순찰했습니다.",
+          "USB": "제가 취급할 물품이 아닙니다.",
+          "OBJECT": "개인 물건을 사건 증거로 보긴 어렵습니다.",
+          "PERSON": "모든 동선을 계속 볼 수는 없습니다.",
+          "TIMELINE": "순찰 체크에는 공백이 없습니다.",
+          "ALIBI": "권한이 있다는 사실만으로 의심할 수는 없습니다.",
+          "MOTIVE": "제게 이득이 없습니다.",
+          "OTHER": "추측보다 기록을 보십시오."
+        },
+        "pressured": {
+          "LOCATION": "20:08부터 20:17까지 약국에 다녀왔습니다.",
+          "USB": "그 공백 동안 USB가 옮겨졌을 가능성은 인정합니다.",
+          "OBJECT": "약 포장과 결제 기록이 제 동선을 설명합니다.",
+          "PERSON": "20:18 서연 카드의 재입실 알림을 뒤늦게 봤습니다.",
+          "TIMELINE": "20:17 복귀, 20:18 카드 알림, 20:25 보고입니다.",
+          "ALIBI": "약국 카메라가 제 공백을 확인해 줄 겁니다.",
+          "MOTIVE": "숨긴 건 순찰 이탈이지 USB가 아닙니다.",
+          "OTHER": "공백까지 포함해 다시 답하겠습니다."
+        },
+        "cracked": {
+          "LOCATION": "약국에서 돌아올 때 서연이 건물 쪽으로 향하는 걸 봤습니다.",
+          "USB": "보안 로그상 마지막 관련 출입자는 서연입니다.",
+          "OBJECT": "파란 임시 카드는 서연에게 발급된 것이 맞습니다.",
+          "PERSON": "지연은 20:14, 민수는 20:11에 퇴실했습니다.",
+          "TIMELINE": "20:18 이후 재퇴실 기록은 20:27 하나뿐입니다.",
+          "ALIBI": "제 실수로 알림을 즉시 확인하지 못했습니다.",
+          "MOTIVE": "기록을 숨기려 했지만 진실을 바꿀 수는 없습니다.",
+          "OTHER": "보안 로그 원본을 제공하겠습니다."
+        }
+      },
+      "evidenceReactions": [
+        {
+          "evidenceId": "medicine-pack",
+          "minState": "neutral",
+          "text": "제가 규정을 어기고 약국에 간 증거입니다. 20:08부터 20:17까지 자리를 비웠습니다.",
+          "nextState": "pressured",
+          "contradictionId": "junho-patrol-conflict",
+          "unlockFactId": "junho_left_patrol"
+        },
+        {
+          "evidenceId": "blue-card",
+          "minState": "neutral",
+          "text": "S.Y. 임시 카드입니다. 20:18 사무실 재입실 기록이 있습니다."
+        },
+        {
+          "evidenceId": "receipt",
+          "minState": "neutral",
+          "text": "영수증 2분 뒤 카드가 사용됐군요. 동선이 연결됩니다."
+        },
+        {
+          "evidenceId": "black-umbrella",
+          "minState": "neutral",
+          "text": "제 우산은 맞지만 약국 동선 이상의 의미는 없습니다."
+        },
+        {
+          "evidenceId": "usb-red",
+          "minState": "neutral",
+          "text": "발견 위치와 출입 로그를 합치면 마지막 접속자가 좁혀집니다.",
+          "nextState": "cracked"
+        }
+      ]
+    },
+    {
+      "characterId": "seoyeon",
+      "greetings": {
+        "neutral": "제가 아는 건 다 말할게요. 정말 별일 아니었으면 좋겠네요.",
+        "evasive": "저는 이미 퇴근했고 USB는 만진 적 없어요.",
+        "pressured": "회의실에 들어간 건 맞지만 가져가려던 건 아니었어요.",
+        "cracked": "제가 옮겼어요. 하지만 훔치려던 게 아니라 숨길 시간이 필요했어요."
+      },
+      "responses": {
+        "neutral": {
+          "LOCATION": "20시 전에 퇴근해서 근처 편의점에 갔어요.",
+          "USB": "오후에 멀리서 봤지만 만진 적은 없어요.",
+          "OBJECT": "홍보 자료 말고는 잘 모르겠는데요.",
+          "PERSON": "민수 씨가 늦게까지 컴퓨터를 쓰고 있었어요.",
+          "TIMELINE": "19:58 퇴근, 편의점, 그 뒤 바로 집에 갔어요.",
+          "ALIBI": "편의점 영수증이 있을 거예요.",
+          "MOTIVE": "홍보팀에 원본 USB가 왜 필요하겠어요?",
+          "OTHER": "조금 더 쉽게 물어봐 주시겠어요?"
+        },
+        "evasive": {
+          "LOCATION": "편의점 뒤엔 회사에 돌아오지 않았어요.",
+          "USB": "정말 손대지 않았어요. 계속 같은 질문이네요.",
+          "OBJECT": "카드는 잃어버린 줄도 몰랐어요.",
+          "PERSON": "다른 사람들도 다 남아 있었잖아요.",
+          "TIMELINE": "몇 분 차이가 그렇게 중요해요?",
+          "ALIBI": "영수증이 제가 밖에 있었다는 증거예요.",
+          "MOTIVE": "캡처 하나 때문에 USB를 가져갈 리 없죠.",
+          "OTHER": "저를 이미 범인처럼 보시는 것 같네요."
+        },
+        "pressured": {
+          "LOCATION": "20:18에 카드를 써서 사무실로 돌아온 건 맞아요.",
+          "USB": "홍보 캡처를 확인하려고 잠깐 연결했어요. 가져갈 생각은 없었어요.",
+          "OBJECT": "2B 메모는 제가 쓴 거예요. 촬영 뒤 보관하려고요.",
+          "PERSON": "그때는 아무도 없었어요. 그래서 더 당황했어요.",
+          "TIMELINE": "20:18 입실, 20:20 캡처 확인, 20:27 퇴실이에요.",
+          "ALIBI": "처음엔 다시 들어온 걸 숨겼어요. 오해받을까 봐요.",
+          "MOTIVE": "내일 배포될 홍보 자료에 잘못된 화면이 들어가 있었어요.",
+          "OTHER": "제가 돌아온 건 인정할게요."
+        },
+        "cracked": {
+          "LOCATION": "USB를 회의실 보관함 2B에 넣고 열쇠를 컵 수거함 뒤에 떨어뜨렸어요.",
+          "USB": "제가 옮겼어요. 캡처 확인 중 보안 경고가 떠서 겁이 났어요.",
+          "OBJECT": "붉은 USB, 메모, 2B 태그 모두 제 행동으로 이어져요.",
+          "PERSON": "다른 세 사람은 각자 숨긴 게 있었지만 USB를 옮기진 않았어요.",
+          "TIMELINE": "20:20 연결, 경고 발생, 20:23 보관함에 숨기고 20:27 나갔어요.",
+          "ALIBI": "제 첫 진술은 거짓이었어요. 책임을 피하려고 했습니다.",
+          "MOTIVE": "훔치려던 건 아니지만 허가 없이 옮기고 숨긴 건 제 잘못이에요.",
+          "OTHER": "더는 부정하지 않을게요."
+        }
+      },
+      "evidenceReactions": [
+        {
+          "evidenceId": "empty-slot",
+          "minState": "neutral",
+          "text": "누군가 뽑았겠죠. 저는 그때 이미 나갔어요.",
+          "nextState": "evasive"
+        },
+        {
+          "evidenceId": "blue-card",
+          "minState": "neutral",
+          "text": "그 카드는… 제가 주운 거예요. USB 때문에 돌아온 건 아니었어요.",
+          "nextState": "pressured",
+          "contradictionId": "seoyeon-card-conflict",
+          "unlockFactId": "seoyeon_returned"
+        },
+        {
+          "evidenceId": "receipt",
+          "minState": "neutral",
+          "text": "편의점에 있었던 건 맞아요. 그 다음 일까지 증명하진 않잖아요.",
+          "nextState": "evasive"
+        },
+        {
+          "evidenceId": "torn-note",
+          "minState": "evasive",
+          "text": "붉은 펜은 흔해요. 2B가 뭔지는… 잘 모르겠어요."
+        },
+        {
+          "evidenceId": "locker-tag",
+          "minState": "evasive",
+          "text": "회의실에 들어간 건 맞아요. 하지만 가져가려고 한 건 아니었어요.",
+          "nextState": "pressured",
+          "contradictionId": "seoyeon-room-conflict"
+        },
+        {
+          "evidenceId": "usb-red",
+          "minState": "pressured",
+          "text": "…제가 옮겼어요. 홍보 캡처를 고치려다 경고가 떠서 2B에 숨겼어요.",
+          "nextState": "cracked",
+          "contradictionId": "seoyeon-touch-conflict",
+          "unlockFactId": "seoyeon_moved_usb"
+        }
+      ]
+    }
+  ]
+}
